@@ -2,8 +2,14 @@
 // Снипет (HTML): btn
 
 .button {
-	display: inline-flex;
-	padding: 0px 0px;
+	padding: rem(13) rem(17) rem(17) rem(22);
+	display: inline-block;
+	background-color: $secondColor;
+	color: #fff;
+	font-weight: 600;
+	font-size: rem(13);
+	line-height: rem(15);
+	letter-spacing: 0.02em;	
 	@media (any-hover: hover) {
 		&:hover {
 		}
