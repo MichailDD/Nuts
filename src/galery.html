@@ -7,7 +7,36 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
+				<section class="page__main main__page">
+					<div class="main__blok">
+						<div class="blok__container">
+							<h1 class="main__title">Галерея</h1>
+							<p class="main__descr">Кадры социальной активности компании</p></div>
+					</div>
+					<!-- Оболочка слайдера -->
+					<div class="main__slider swiper">
+						<!-- Двигающееся часть слайдера -->
+						<div class="main__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="main__slide swiper-slide">
+								<div class="main__image">
+									<img  src="@img/galary/slide01.png" alt=""> 
+								</div>
+								
+							</div>
+							<div class="main__slide swiper-slide">
+								<img src="@img/galary/slide02.png" alt="">
+							</div>
+							<div class="main__slide swiper-slide">
+								<img src="@img/galary/slide04.png" alt="">
+							</div>
+							
+						</div>
 				
+					</div>
+
+				</section>
+
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
