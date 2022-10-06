@@ -5,6 +5,19 @@
     &__main {
     }
 }
+.slide__blok{
+    width: 100%;
+    height: rem(600);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+   background-size: auto;
+    @media (max-width:$mobile){
+            background-position:top;
+            height: 100vh;
+
+    }
+}
 .main {
 
     // .main__page
@@ -63,15 +76,13 @@
     // .main__slide
 
     &__slide {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
+
+     
     }
 }
-.main__image img{
-   
+.main__img{
+}
+.main__image{
 }
 .blok {
 
@@ -90,7 +101,10 @@
 .swiper-wrapper {
 }
 
-.main__img{
-        object-fit: cover;
-        object-position: center;
+.photo{
+    padding-top: rem(340);
+    &__blok{
+        @include adaptiveValue("width",740 ,500 );
+        @include adaptiveValue("height",556 ,250 );
+    }
 }
