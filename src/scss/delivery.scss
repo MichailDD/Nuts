@@ -2,6 +2,7 @@
 position: relative;
 width: 100%;
 height: rem(300);
+
 @media (max-width:$mobile){
     height: rem(180);
     min-width: rem(345); 
@@ -51,6 +52,7 @@ height: rem(300);
         left: 0;
         width: 100%;
         height: rem(300);
+        @include adaptiveValue("padding-top",18 ,10 );
     }
     &__blok{
         width: 100%;
@@ -86,7 +88,8 @@ height: rem(300);
 .page-payment {
 }
 .payment {
-    @include adaptiveValue("padding-top",85 ,30 );
+    @include adaptiveValue("padding-top",85 ,10 );
+    @include adaptiveValue("padding-bottom",74 ,10 );
 		// .payment__container
 
 		&__container {
@@ -95,12 +98,24 @@ height: rem(300);
 		// .payment__navigation
 
 		&__navigation {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            @include adaptiveValue("gap",215 ,45 );
+            @media (max-width:$mobile){
+                 flex-direction: column; 
+                 justify-content:center;
+                 align-items: center;
+            }
 		}
         &__text{
             font-weight: 800;
-            @include adaptiveValue("font-size",20 ,12 );
+            @include adaptiveValue("font-size",20 ,20 );
             @include adaptiveValue("line-height",23 ,10 );
             letter-spacing: 0.01em;
+            @media (max-width:$mobile){
+                  padding-top: rem(10);
+            }
         }
 		// .payment__title
 
@@ -108,39 +123,68 @@ height: rem(300);
             display: flex;
             justify-content:center;
             align-items: center;
+            @media (max-width:$mobile){
+                  
+            }
+
 		}
 
 		// .payment__content
 
 		&__content {
+            @include adaptiveValue("padding-top",64 ,30 );
 		}
 
 		// .payment__body
 
 		&__body {
+          
 		}
 }
 
 .way {
-
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$mobile){
+         flex-direction: column; 
+    }
+    
 		// .way__left
 
 		&__left {
+            
+            display: flex;
+            flex-direction: column;
+            @include adaptiveValue("gap",40 ,20 );
 		}
 
 		// .way__title
 
 		&__title {
 		}
+        font-weight: 800;
+        @include adaptiveValue("font-size",18 ,10 );
+        @include adaptiveValue("line-height", 24,12 );
+        color: $color4;
+        @media (max-width:$mobile){
+            padding-top: rem(10);
+        }
+        
 
 		// .way__blok
 
 		&__blok {
+            display: flex;
+            flex-direction: column;
+
 		}
 
 		// .way__image
 
 		&__image {
+            @media (max-width:$mobile){
+                 display: none; 
+            }
 		}
 }
 .blok {
@@ -148,6 +192,12 @@ height: rem(300);
 		// .blok__top
 
 		&__top {
+            display: flex;
+            gap: rem(13);
+            align-items: center;
+            @media (max-width:$mobile){
+                 gap: rem(2); 
+            }
 		}
 
 		// .blok__image
@@ -158,11 +208,161 @@ height: rem(300);
 		// .blok__title
 
 		&__title {
+            font-style: italic;
+            font-weight: 600;
+            font-size: rem(16);
+            line-height: rem(24);
+            color: $color4; 
+            text-align: center;
+            @media (max-width:$mobile){
+                 font-size: rem(15); 
+            }
 		}
+
 
 		// .blok__bottom
 
 		&__bottom {
+            font-weight: 500;
+            font-size: rem(16);
+            line-height: rem(24);
+            color: $color4;
+            @include adaptiveValue("padding-top",15 ,5 );
+            @media (max-width:$mobile){
+                 font-size: rem(14); 
+                 line-height: rem(20);
+            }
 		}
 }
 
+.delivery__statistic{
+    background-color: #FBFBFB;
+    @include adaptiveValue("padding-top",72 ,10 );
+    @include adaptiveValue("padding-bottom",90 ,10 );
+}
+.delivery {
+
+    // .delivery__goal
+
+    &__goal {
+    }
+
+    // .delivery__wrapper
+
+    &__wrapper {
+    }
+
+    // .delivery__descr
+
+    &__descr {
+    }
+}
+.goal {
+position: relative;
+
+    // .goal__container
+
+    &__container {
+        position: relative;
+        height: rem(740);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: rem(25);
+
+        @media (max-width:$mobile){
+            height: rem(180);
+            z-index: 10;
+        }
+    }
+    &__image{
+        width: 100%;
+        height: rem(740);
+        object-fit: cover;
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            object-fit: cover; 
+        }
+    }
+    // .goal__title
+
+    &__title {
+        // z-index: 10;
+        font-weight: 800;
+        font-size: rem(45);
+        line-height: rem(53);
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        text-align: center;
+        @media (max-width:$mobile){
+            font-size: rem(15); 
+            line-height: rem(25);
+        }
+    }
+    &__descr{
+        font-style: italic;
+        font-weight: 500;
+        font-size: rem(24);
+        line-height: rem(28);
+        letter-spacing: 0.01em;
+        text-align: center;
+
+        color: #FFFFFF;
+        @media (max-width:$mobile){
+             font-size: rem(10); 
+             line-height: rem(10);
+        }
+    }
+    // .goal__slider
+
+    &__slider {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: rem(740);
+        @media (max-width:$mobile){
+            height: rem(180); 
+        }
+    }
+
+    // .goal__wrapper
+
+    &__wrapper {
+        position: relative;
+        
+    }
+    &__img{
+        cursor: pointer;
+        @media (max-width:$mobile){
+             width: rem(25); 
+             height: rem(25); 
+        }
+        
+    }
+    // .goal__slide
+
+    &__slide {
+    }
+
+    // .goal__blok
+
+    &__blok {
+        width: 100%;
+        height: rem(740);
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            object-fit: cover; 
+        }
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
