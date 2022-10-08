@@ -239,7 +239,9 @@ padding-top: rem(340);
             line-height: rem(18);
         }
     }
-
+    &__top{
+        
+    }
     // .tabs__content
 
     &__content {
@@ -324,5 +326,131 @@ padding-top: rem(340);
 //     }
 // }
 .button {
+}
+.statistic__page{
+    @include adaptiveValue("padding-top",90 ,20 );
+}
+.page__statistics {
+    @include adaptiveValue("padding-top",72, 20);
+    @include adaptiveValue("padding-bottom",72, 20);
+    background-color: #FBFBFB;
+}
+.eco {
+position: relative;
+width: 100%;
+height: rem(740);
+@media (max-width:$mobile){
+    height: rem(180);
+    min-width: rem(345); 
+}
+
+    // .eco__container
+    &__wrapper{
+        position: relative;
+    }
+    &__container {
+        position: relative;
+        z-index: 3;
+        display: flex;
+        justify-content:center;align-items: center;
+        flex-direction: column;
+        @include adaptiveValue("padding-top",232 ,150 );
+        @include adaptiveValue("gap", 40,15 );
+        @media (max-width:$mobile){
+             padding-top: rem(25); 
+        }
+    }
+
+    // .eco__image
+
+    &__image {
+        width: 100%;
+        height: rem(740);
+        object-fit: cover;
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            object-fit: cover; 
+        }
+    }
+
+    // .eco__title
+
+    &__title {
+        font-weight: 800;
+        font-size: rem(45);
+        line-height: rem(53);
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        @media (max-width:$mobile){
+             font-size: rem(25);
+             line-height: rem(25); 
+        }
+    }
+
+    // .eco__subtitle
+    &__br{
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: rem(22);
+        line-height: rem(28);
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        @media (max-width:$mobile){
+             font-size: rem(10); 
+             line-height: rem(15);
+             text-align: center;
+        }
+    }
+
+    // .eco__slider
+    &__img{
+        @media (max-width:$mobile){
+             width: rem(45); 
+             height: rem(45); 
+        }
+
+    }
+    &__slider {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: rem(740);
+    }
+
+    // .eco__wrapper
+    &__image{
+      
+    }
+    &__wrapper {
+    }
+
+    // .eco__slide
+
+    &__slide {
+    }
+
+    // .eco__blok
+
+    &__blok {
+        width: 100%;
+        height: rem(740);
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            object-fit: cover; 
+        }
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
 }
 

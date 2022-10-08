@@ -1,1 +1,73 @@
 // Заголовки, общие БЄМ блоки и проче...
+.statistic {
+
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:$mobile){
+             display: grid;
+             grid-template-columns: repeat(2,1fr); 
+             grid-template-rows: repeat(2,1fr);
+             row-gap: rem(5);
+             
+        }
+       
+        
+    }
+    // .statistic__blok
+
+    &__blok {
+        display: flex;
+        flex-direction: column;
+        
+        justify-content:center;
+        align-items: center;
+
+    }
+    &__top{
+        display: flex;
+        
+    }
+    // .statistic__num
+
+    &__num {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        @include adaptiveValue("font-size", 72 ,52 );
+        @include adaptiveValue("line-height",88 ,60 );
+        letter-spacing: 0.01em;
+        color: $color4;
+        padding-left: rem(20);
+        @media (max-width:$mobile){
+             font-size: rem(30); 
+        }
+    }
+    &__span{
+        font-weight: 900;
+        font-size: rem(18);
+        line-height: rem(21);
+        letter-spacing: 0.05em;
+        font-weight: 900;
+        color: $color4;
+        padding-top: rem(20);
+        @media (max-width:$mobile){
+             font-size: rem(10); 
+             padding-top: rem(13);
+        }
+    }
+    // .statistic__descr
+
+    &__descr {
+        font-weight: 400;
+        font-size: rem(18);
+        line-height: rem(21);
+        text-align: center;
+        letter-spacing: 0.02em;
+        color:$color4;
+        @media (max-width:$mobile){
+             font-size: rem(10); 
+            
+        }
+    }
+}

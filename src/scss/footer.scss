@@ -1,3 +1,364 @@
 //====================================================================================================
+.footer {
+
+    // .footer__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        @include adaptiveValue("padding-top",100 ,40 );
+        @media (max-width:$mobile){
+             flex-direction: column; 
+             
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+    }
+
+    // .footer__title
+
+    &__title {
+        font-weight: 800;
+        font-size: rem(45);
+        line-height: rem(53);
+        letter-spacing: 0.01em;
+        color:$color4;
+        @include adaptiveValue("padding-top",15 ,10 );
+        @media (max-width:$mobile){
+             font-size: rem(30); 
+             text-align: center;
+        }
+    }
+
+    // .footer__numbers
+
+    &__numbers {
+       
+    }
+
+    // .footer__mail
+
+    &__mail {
+    }
+
+    // .footer__office
+
+    &__office {
+    }
+
+    // .footer__prodproduction
+
+   
+
+    // .footer__map
+
+    &__map {
+        @include adaptiveValue("width",739 ,320 );
+        @include adaptiveValue("height",518 ,200 );
+        @media (max-width:$mobile){
+             padding-top: rem(20); 
+        }
+    }
+}
+.numbers {
+    display: flex;
+    @include adaptiveValue("gap", 45,25 );
+    align-items: center;
+    @include adaptiveValue("padding-top",59 ,25 );
+    // .numbers__num
+    @media (max-width:$mobile){
+         justify-content: center; 
+    }
+
+    &__num {
+        display: flex;
+        gap: rem(16);
+    }
+
+    // .numbers__img
+
+    &__img {
+    }
+
+    // .numbers__phone
+
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: rem(21);
+        letter-spacing: 0.01em;
+        color: $color4;
+        font-family: Montserrat;
+    }
+
+    // .numbers__link
+
+    &__link {
+    }
+
+    // .numbers__social
+
+    &__social {
+    }
+}
+.social {
+
+    // .social__img
+
+    &__img {
+    }
+}
+.mail {
+        display: flex;
+        gap: rem(16);
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: rem(21);
+        letter-spacing: 0.01em;
+        @include adaptiveValue("padding-top",45 ,25 );
+        @media (max-width:$mobile){
+            padding-left: rem(45); 
+        }
+    // .mail__img
+
+    &__img {
+    }
+
+    // .mail__link
+
+    &__link {
+    }
+}
+.office {
+    display: flex;
+    gap: rem(16);
+    align-items: flex-start;
+    @include adaptiveValue("padding-top",50 ,25 );
+    // .office__blok
+    @media (max-width:$mobile){
+       padding-left: rem(45); 
+   }
+
+    &__blok {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+
+    // .office__title
+
+    &__title {
+        font-weight: 800;
+        font-size: rem(17);
+        line-height: rem(20);
+        letter-spacing: 0.01em;
+        color: $color4;
+    }
+
+    // .office__descr
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    // .office__text
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: rem(21);
+        letter-spacing: 0.01em;
+    }
+}
+.production {
+    display: flex;
+    gap: rem(16);
+    align-items: flex-start;
+    @include adaptiveValue("padding-top",40 ,25 );
+    // .production__blok
+    @media (max-width:$mobile){
+        padding-left: rem(45); 
+    }
+
+    &__blok {
+        display: flex;
+        flex-direction: column;
+        gap: rem(16);
+    }
+
+    // .production__title
+
+    &__title {
+        font-weight: 800;
+        font-size: rem(17);
+        line-height: rem(20);
+        letter-spacing: 0.01em;
+        color: $color4;
+    }
+
+    // .production__descr
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .production__text
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: rem(21);
+        letter-spacing: 0.01em;
+    }
+}
+.footer {
+    
+    // .footer__inner
+   
+    &__inner {
+        @include adaptiveValue("padding-top",80 ,30 );
+        display: flex;
+        justify-content:center;align-items: flex-end;
+      
+    }
+
+
+    // .footer__logo
+
+    &__logo {
+        flex: 1 1 auto;
+        display: flex;
+        gap: rem(8);
+        align-items: flex-end;
+        @media (max-width:$mobile){
+             justify-content: center;
+             align-items: center;
+        }
+    }
+    &__none{
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+
+    // .footer__main
+
+    &__main {
+        font-weight: 800;
+        font-size: rem(15);
+        line-height: rem(18);
+        letter-spacing: 0.02em;
+        color: $color4;
+    }
+
+    // .footer__menu
+
+    &__menu {
+    }
+
+    // .footer__body
+
+    &__body {
+    }
+
+    // .footer__list
+
+    &__list {
+        display: flex;
+        @include adaptiveValue("gap", 60,25 );
+        
+    }
+
+    // .footer__item
+
+    &__item {
+    }
+
+    // .footer__link
+
+    &__link {
+    }
+}
+.menu {
+    @media (max-width:$mobile){
+         display: none; 
+    }
+}
+.line{
+    width: 100%;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    height: rem(1);
+    @include adaptiveValue("margin-top",30 ,10 );
+}
+.footer {
+
+    // .footer__bottom
+
+    &__bottom {
+    }
+}
+.bottom {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    @include adaptiveValue("padding-top",27 ,13 );
+    @include adaptiveValue("padding-bottom",40,20 );
+    // .bottom__blok1
+    &__span{
+        font-weight: bold;
+    }
+
+    &__blok1 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: rem(15);
+        color: $color4;
+        span{
+            color: $secondColor;
+        }
+    }
+
+    // .bottom__blok2
+
+    &__blok2 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: rem(12);
+        line-height: rem(15);
+        color: $color4;
+        @media (max-width:$mobile){
+             display: none; 
+        }
+    }
+
+    // .bottom__blok3
+
+    &__blok3 {
+        display: flex;
+        gap: rem(20);
+    }
+
+    // .bottom__img
+
+    &__img {
+    }
+}
 
 //====================================================================================================

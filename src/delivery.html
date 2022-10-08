@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page__delivery ">
+				<section class="delivery">
+                    <div class="delivery__wrapper">
+                        <div class="delivery__container">
+                            <h1 class="delivery__title">Оплата и доставка</h1>
+                        </div>
+                    </div>
+                    <div class="delivery__slider swiper">
+                        <div class="delivery__wrapper swiper-wrapper">
+                            <div class="delivery__slide swiper-slide">
+                                <div class="delivery__blok">
+                                    <img class="delivery__image" src="@img/delivery/slide01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="delivery__slide swiper-slide">
+                                <div class="delivery__blok"><img class="delivery__image" src="@img/delivery/slide02.png" alt=""></div>
+                            </div>
+                            <div class="delivery__slide swiper-slide">
+                                <div class="delivery__blok"><img class="delivery__image" src="@img/delivery/slide03.png" alt=""></div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </section>
+                <section class="page-payment">
+                    <div class="payment__container">
+                        <div data-tabs class="payment">
+                            <nav data-tabs-titles class="payment__navigation">
+                                <button type="button" class="payment__title _tab-active">
+                                    <img src="@img/delivery/icon01.svg" alt="">
+                                    <div class="payment__text">Оплата заказа</div>
+                                </button>
+                                <button type="button" class="payment__title"> 
+                                    <img src="@img/delivery/icon02.svg" alt="">
+                                    <div class="payment__text">Доставка партии</div>
+                                </button>
+                                <button type="button" class="payment__title"> 
+                                    <img src="@img/delivery/icon03.svg" alt="">
+                                    <div class="payment__text">Возврат товара</div>
+                                </button>
+                            </nav>
+                            <div data-tabs-body class="payment__content">
+                                <div class="payment__body way ">
+                                    <div class="way__left">
+                                        <h2 class="way__title">Способы оплаты </h2>
+                                        <div class="way__blok blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon04.svg" alt="">
+                                               <div class="blok__title">Безналичный расчет</div>
+                                           </div>
+                                           <div class="blok__bottom">Вы можете выбрать “получить реквизиты” <br>
+                                               для дальнейшей оплаты на карту, или в терминалах.</div>
+                                        </div>
+                                        <div class="way__blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon05.svg" alt="">
+                                               <div class="blok__title">Оплата с помощью банковской карты</div>
+                                           </div>
+                                           <div class="blok__bottom">Оплатите Ваш заказ картой любого банка онлайн <br>
+                                            (LiqPay/Приват24)</div>
+                                        </div>
+                                        <div class="way__blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon06.svg" alt="">
+                                               <div class="blok__title">Наличный расчет
+                                            </div>
+                                           </div>
+                                           <div class="blok__bottom">Оплата заказов наложенным платежом в отделении <br>
+                                            Новой Почты, или наличными курьерами.</div>
+                                        </div>
+                                    </div>
+                                    <div class="way__image">
+                                        <img src="@img/delivery/image01.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- ///////////////////////////////////////////////////////////// -->
+                                <div class="payment__body way ">
+                                    <div class="way__left">
+                                        <h2 class="way__title">Способы доставки</h2>
+                                        <div class="way__blok blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon07.svg" alt="">
+                                               <div class="blok__title">Курьером по Одессе
+                                            </div>
+                                           </div>
+                                           <div class="blok__bottom">Доставка всегда включена в стоимость</div>
+                                        </div>
+                                        <div class="way__blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon08.svg" alt="">
+                                               <div class="blok__title">Доставка по Украине
+                                            </div>
+                                           </div>
+                                           <div class="blok__bottom">Доставка по всей Украине осуществляется 
+                                            Новой Почтой, за счет покупателя</div>
+                                        </div>
+                                        <div class="way__blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon09.svg" alt="">
+                                               <div class="blok__title">Отправка товара
+                                            </div>
+                                           </div>
+                                           <div class="blok__bottom">Отправка товара, который есть в наличии,
+                                            происходит в течении 2-4 рабочих дней</div>
+                                        </div>
+                                    </div>
+                                    <div class="way__image">
+                                        <img src="@img/delivery/image02.png" alt="">
+                                    </div>
+                                </div>
+                                <!-- //////////////////////////////////////////////////////////////////////// -->
+                                <div class="payment__body way ">
+                                    <div class="way__left">
+                                        <h2 class="way__title">Способы оплаты </h2>
+                                        <div class="way__blok blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon04.svg" alt="">
+                                               <div class="blok__title">Безналичный расчет</div>
+                                           </div>
+                                           <div class="blok__bottom">Вы можете выбрать “получить реквизиты” <br>
+                                               для дальнейшей оплаты на карту, или в терминалах.</div>
+                                        </div>
+                                        <div class="way__blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon04.svg" alt="">
+                                               <div class="blok__title">Безналичный расчет</div>
+                                           </div>
+                                           <div class="blok__bottom">Вы можете выбрать “получить реквизиты” <br>
+                                               для дальнейшей оплаты на карту, или в терминалах.</div>
+                                        </div>
+                                        <div class="way__blok">
+                                           <div class="blok__top">
+                                               <img class="blok__image" src="@img/delivery/icon04.svg" alt="">
+                                               <div class="blok__title">Безналичный расчет</div>
+                                           </div>
+                                           <div class="blok__bottom">Вы можете выбрать “получить реквизиты” <br>
+                                               для дальнейшей оплаты на карту, или в терминалах.</div>
+                                        </div>
+                                    </div>
+                                    <div class="way__image">
+                                        <img src="@img/delivery/image01.png" alt="">
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </section>
+				
+			</main>
+			<!-- @@include('html/_footer.htm',{}) -->
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,168 @@
+.delivery {
+position: relative;
+width: 100%;
+height: rem(300);
+@media (max-width:$mobile){
+    height: rem(180);
+    min-width: rem(345); 
+}
+    // .delivery__container
+
+    &__container {
+        position: relative;
+        z-index: 5;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+      
+
+    }
+    &__wrapper{
+        position: relative;
+    }
+
+    // .delivery__title
+
+    &__title {
+        z-index: 5;
+        font-weight: 800;
+        @include adaptiveValue("font-size",62 ,30 );
+        @include adaptiveValue("line-height",73 ,40 );
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        @include adaptiveValue("padding-top",116 ,50 );
+        @media (max-width:$mobile){
+             padding-top: rem(65); 
+        }
+    }
+    &__image{
+        width: 100%;
+        height: rem(300);
+        object-fit:cover; 
+        @media (max-width:$mobile){
+            height: rem(180);
+        }
+    }
+    // .delivery__slider
+
+    &__slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: rem(300);
+    }
+    &__blok{
+        width: 100%;
+        height: rem(300);
+        
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            
+        }
+    }
+    // .delivery__wrapper
+
+    &__wrapper {
+    }
+
+    // .delivery__slide
+
+    &__slide {
+        @media (max-width:$mobile){
+            height: rem(180);
+            
+        }
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.page-payment {
+}
+.payment {
+    @include adaptiveValue("padding-top",85 ,30 );
+		// .payment__container
+
+		&__container {
+		}
+
+		// .payment__navigation
+
+		&__navigation {
+		}
+        &__text{
+            font-weight: 800;
+            @include adaptiveValue("font-size",20 ,12 );
+            @include adaptiveValue("line-height",23 ,10 );
+            letter-spacing: 0.01em;
+        }
+		// .payment__title
+
+		&__title {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+		}
+
+		// .payment__content
+
+		&__content {
+		}
+
+		// .payment__body
+
+		&__body {
+		}
+}
+
+.way {
+
+		// .way__left
+
+		&__left {
+		}
+
+		// .way__title
+
+		&__title {
+		}
+
+		// .way__blok
+
+		&__blok {
+		}
+
+		// .way__image
+
+		&__image {
+		}
+}
+.blok {
+
+		// .blok__top
+
+		&__top {
+		}
+
+		// .blok__image
+
+		&__image {
+		}
+
+		// .blok__title
+
+		&__title {
+		}
+
+		// .blok__bottom
+
+		&__bottom {
+		}
+}
+

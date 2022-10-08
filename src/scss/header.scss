@@ -157,12 +157,18 @@
 	&__numbers {
 		display: flex;
 		flex-direction: column;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 500;
+		font-size: rem(13);
+		line-height: rem(16)
 		
 	}
 
 	// .inner__num
 
 	&__num {
+
 	}
 
 	// .inner__actions
@@ -203,7 +209,7 @@
 	// .actions__text
 
 	&__text {
-		font-family: 'Montserrat';
+		font-family: Montserrat;
 		font-style: normal;
 		font-weight: 500;
 		font-size: rem(12);
@@ -241,7 +247,7 @@
 			 transition: all 0.3s ease 0s;
 			 overflow: auto;
 			 padding-top: rem(100);
-			z-index: 20;
+			 z-index: 50;
 			  
 		}
 		.menu-open &{
@@ -265,6 +271,7 @@
 			 background-color:$secondColor;
 			 height: 100%;
 			 padding-top: rem(60);
+			 
 			 
 		}
 	}
