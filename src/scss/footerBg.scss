@@ -2,11 +2,17 @@
 .footer {
 
     // .footer__top
+    &__topchik{
+        background-color: #FBFBFB;
 
+    }
     &__top {
         display: flex;
         justify-content: space-between;
         @include adaptiveValue("padding-top",100 ,40 );
+        @include adaptiveValue("padding-bottom",90 ,20 );
+        
+        
         @media (max-width:$mobile){
              flex-direction: column; 
              
@@ -229,7 +235,7 @@
     // .footer__inner
    
     &__inner {
-        @include adaptiveValue("padding-top",80 ,30 );
+        @include adaptiveValue("padding-top",43,10 );
         display: flex;
         justify-content:center;align-items: flex-end;
       

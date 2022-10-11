@@ -113,7 +113,9 @@ body {
 				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
 			}
 		}
+		
 	}
+
 } @else {
 	// По брейк-поинтам
 	[class*="__container"] {
@@ -151,10 +153,13 @@ body {
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
+@import "footerBg";
 
 // Подключение стилей отдельных страниц
 @import "home";
 @import "index";
 @import "galery";
 @import "opto";
-@import "delivery"
+@import "delivery";
+@import "news";
+@import "oneNews";
