@@ -1,0 +1,293 @@
+.page {
+
+    // .page__aboute
+
+    &__aboute {
+        width: 100%;
+        height: rem(600);
+        background: url(../img/aboute/pic01.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+.aboute {
+
+    // .aboute__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: rem(33);
+        @include adaptiveValue("padding-top",195 ,50 );
+    }
+
+    // .aboute__title
+
+    &__title {
+        font-weight: 800;
+       @include adaptiveValue("font-size", 62,20 );
+       @include adaptiveValue("line-height",73 ,35 );
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        
+    }
+
+    // .aboute__descr
+
+    &__descr {
+        font-weight: 600;
+        font-size: rem(25);
+        line-height: rem(29);
+        
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    // .aboute__img
+
+    &__img {
+    }
+}
+.page-manufacturer {
+}
+.manufacturer {
+
+    @include adaptiveValue("margin-top",100 ,20 );
+		// .manufacturer__container
+
+		&__container {
+            display: flex ;
+            justify-content: space-between;
+            
+		}
+
+		// .manufacturer__left
+
+		&__left {
+            display: flex;
+            flex-direction: column;
+            gap: rem(35);
+            @include adaptiveValue("padding-top",29 ,10 );
+		}
+
+		// .manufacturer__title
+
+		&__title {
+            font-weight: 800;
+            font-size: rem(45);
+            line-height:rem(53);
+            letter-spacing: 0.01em;
+            color: $color4;
+            
+		}
+
+		// .manufacturer__descr
+
+		&__descr {
+
+            font-weight: 500;
+            font-size: rem(16);
+            line-height: rem(24);
+            color: $color4;
+            letter-spacing: 0.01em;
+		}
+
+		// .manufacturer__right
+
+		&__right {
+           
+		}
+
+		// .manufacturer__slider
+
+		&__slider {
+            width: rem(700);
+            height: rem(472);
+            position: relative;
+            
+		}
+        &__image{ 
+
+        }
+		// .manufacturer__wrapper
+
+		&__wrapper {
+          
+		}
+
+		// .manufacturer__slide
+
+		&__slide {
+         
+		}
+        &__actions{
+            position: absolute;
+            left: rem(0);
+            bottom: rem(0);
+            background-color: $secondColor;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap: rem(33);
+            padding: rem(11) rem(20) rem(13) rem(20);
+        }
+		// .manufacturer__blok
+
+		&__blok {
+            width: rem(700);
+            height: rem(472);
+            background: url(../img/aboute/slide01.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+		}
+}
+.swiper {
+}
+.swiper-wrapper {
+
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+
+}
+.swiper-button-next {
+}
+.page {
+
+    // .page__autor
+
+    &__autor {
+    }
+}
+.autor {
+
+    // .autor__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    // .autor__left
+
+    &__left {
+        display: flex;
+    }
+
+    // .autor__image
+
+    &__image {
+        
+    }
+
+    // .autor__slider
+
+    &__slider {
+        width: rem(342);
+        height: rem(493);
+    }
+
+    // .autor__wrapper
+
+    &__wrapper {
+        
+    }
+
+    // .autor__slide
+
+    &__slide {
+       
+    }
+
+    // .autor__blok
+
+    &__blok {
+        
+    }
+
+    // .autor__text
+
+    &__text {
+    }
+
+    // .autor__title
+
+    &__title {
+        font-weight: 800;
+        font-size: rem(32);
+        line-height: rem(38);
+        letter-spacing: 0.01em;
+        color: $color4;
+    }
+
+    // .autor__subtitle
+
+    &__subtitle {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(16);
+        line-height: rem(21);
+        letter-spacing: 0.01em;
+    }
+
+    // .autor__descr
+
+    &__descr {
+        font-style: italic;
+        font-weight: 500;
+        font-size: rem(15);
+        line-height:rem(13);
+        color: $color4;
+        letter-spacing: 0.01em;
+    }
+
+    // .autor__btn
+
+    &__btn {
+    }
+
+    // .autor__right
+
+    &__right {
+    }
+
+    // .autor__history
+
+    &__history {
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.button {
+}
+.history {
+
+    // .history__title
+
+    &__title {
+    }
+
+    // .history__descr
+
+    &__descr {
+    }
+
+    // .history__img
+
+    &__img {
+    }
+}
+
+

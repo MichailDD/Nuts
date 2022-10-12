@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+                <section class="page__aboute aboute">
+                    <div class="aboute__container">
+                        <h1 class="aboute__title">Орех Причерноморья</h1>
+                        <div class="aboute__descr">Единственный в Украине сад совместного <br>
+                            выращивание фундука и грецкого ореха</div>
+                        <img class="aboute__img" src="@img/aboute/icon01.svg" alt="">
+                    </div>
+                </section>
+                <section class="page-manufacturer manufacturer">
+                    <div class="manufacturer__container">
+                        <div class="manufacturer__left">
+                            <div class="manufacturer__title">О производителе</div>
+                            <p class="manufacturer__descr">Сельскохозяйственный обслуживающий кооператив  <br>
+                                “Орех Причерноморья” выращивает смешанные сады <br>
+                                ореха грецкого с фундуком, а также ореха грецкого <br>
+                                с шиповником, на площади более 150 гектаров. </p>
+                            <p class="manufacturer__descr">Помимо этого кооператив занимается выращиванием <br>
+                                посадочного материала, саженцов привитого и непривитого <br>
+                                грецкого ореха, фундука и шиповника.</p>
+                            <p class="manufacturer__descr">Предприятие укомплектовано всей необходимой техникой <br>
+                                и оборудованием для выращивания интенсивного сада, <br> воспроизводства саженцев в питомнике и выращивания трюфеля. </p>
+                        </div>
+                        <div class="manufacturer__right">
+                            <!-- Оболочка слайдера -->
+                            <div class="manufacturer__slider swiper">
+                                <!-- Двигающееся часть слайдера -->
+                                <div class="manufacturer__wrapper swiper-wrapper">
+                                    <!-- Слайд -->
+                                    <div class="manufacturer__slide swiper-slide">
+                                        <div class="manufacturer__blok">
+                                            <!-- <img class="manufacturer__image" src="@img/aboute/slide01.png" alt=""> -->
+                                        </div>
+                                    </div>
+                                    <div class="manufacturer__slide swiper-slide">
+                                        <div class="manufacturer__blok">
+                                            <!-- <img class="manufacturer__image" src="@img/aboute/slide01.png" alt=""> -->
+                                        </div>
+                                    </div>
+                                    <div class="manufacturer__slide swiper-slide">
+                                        <div class="manufacturer__blok">
+                                            <!-- <img class="manufacturer__image" src="@img/aboute/slide01.png" alt=""> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Если нужна навигация (влево/вправо) -->
+                              <div class="manufacturer__actions">
+                                <button type="button" class="swiper-button-prev">
+                                    <img class="manufacturer__btn" src="@img/aboute/icon02.svg" alt="">
+                                </button>
+                                <button type="button" class="swiper-button-next">
+                                    <img class="manufacturer__btn" src="@img/aboute/icon03.svg" alt="">
+                                </button>
+                              </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                    <section class="page__autor autor">
+                        <div class="autor__container">
+                            <div class="autor__left">
+                                <div class="autor__image">
+                                    <div class="autor__slider swiper">
+                                        <div class="autor__wrapper swiper-wrapper">
+                                            <div class="autor__slide swiper-slide">
+                                                <div class="autor__blok">
+                                                    <img src="@img/aboute/slide02.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="autor__slide swiper-slide">
+                                                <div class="autor__blok">
+                                                    <img src="@img/aboute/slide03.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="autor__slide swiper-slide">
+                                                <div class="autor__blok">
+                                                    <img src="@img/aboute/slide04.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="autor__text">
+                                    <div class="autor__title">Павел Тулба</div>
+                                    <div class="autor__subtitle">Учередитель и владелец
+                                        предприятия “Орех Причерноморья”</div>
+                                    <div class="autor__descr">Главная наша цель – получить максимальную 
+                                        прибыль с одного гектара. </div>
+                                    <button type="button" class="button autor__btn ">Написать нам</button>
+                                </div>
+                            </div>
+                            <div class="autor__right">
+                                <div class="autor__history history">
+                                    <div class="history__title">История предприятия</div>
+                                    <p class="history__descr">Наше предприятие основано в 2012 году 
+                                        для закладки смешанного сада грецкого ореха 
+                                        и фундука. </p>
+                                    <p class="history__descr">На сегодня мы уже заложили более 100 гектаров сада и продолжаем расширять свои насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием саженцев, разведением и выращиванием овец, а также являемся первой в Украине компанией, приступившей к промышленному выращиванию трюфелей на корнях фундука.</p>
+                                    <p class="history__descr">Земля, которой пользуется кооператив, является собственностью членов нашего кооператива.</p>
+                                    <img class="history__img" src="@img/aboute/logo.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+			</main>
+			<!-- @@include('html/_footer.htm',{}) -->
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
+
