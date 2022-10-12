@@ -71,3 +71,95 @@
         }
     }
 }
+///////////////////////////Galary///////////////////////////////@
+/// .galery {
+
+    // .sial__container
+
+    &__container {
+    }
+
+    // .sial__title
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: rem(22);
+        line-height: rem(27);
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+
+    }
+
+    // .sial__subtitle
+
+    &__subtitle {
+
+    }
+
+    // .sial__galery
+
+    &__galery {
+    }
+
+    // .sial__top
+
+    &__top {
+        display: flex;
+        gap: rem(31);
+    }
+
+    // .sial__card-big
+
+    &__card-big {
+        width: rem(739);
+        height: rem(556);
+        overflow: hidden;
+        position: relative;
+        transition: all 0.9s ;
+        &:hover .sial__content{
+            position: absolute;
+             top: rem(0);
+            transition: all 0.9s ;
+            
+        }
+    }
+
+    // .sial__content
+
+    &__content {
+        transition: all 0.3s ;  
+        background: rgba(51, 125, 90, 0.97);
+        opacity: 0.9;
+        padding: rem(77) rem(216) rem(380) rem(39);
+    }
+
+    // .sial__descr
+
+    &__descr {
+                
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: rem(15);
+line-height: rem(22);
+color: #FFFFFF;
+padding-top: rem(25);
+    }
+
+    // .sial__card-medium
+
+    &__card-medium {
+        width: rem(520);
+        height: rem(556);
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ; 
+        &:hover .sial__content{
+            position: absolute;
+            top: rem(0);
+            transition: all 0.3s ;  
+        }
+    }
+}
