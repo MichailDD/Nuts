@@ -72,14 +72,14 @@
     }
 }
 ///////////////////////////Galary///////////////////////////////@
-/// .galery {
+.galery {
 
     // .sial__container
 
     &__container {
     }
 
-    // .sial__title
+    
 
     &__title {
         font-family: Montserrat;
@@ -92,25 +92,25 @@
 
     }
 
-    // .sial__subtitle
+  
 
     &__subtitle {
 
     }
 
-    // .sial__galery
+  
 
     &__galery {
     }
 
-    // .sial__top
+  
 
     &__top {
         display: flex;
         gap: rem(31);
     }
 
-    // .sial__card-big
+   
 
     &__card-big {
         width: rem(739);
@@ -118,7 +118,7 @@
         overflow: hidden;
         position: relative;
         transition: all 0.9s ;
-        &:hover .sial__content{
+        &:hover .galery__content{
             position: absolute;
              top: rem(0);
             transition: all 0.9s ;
@@ -126,7 +126,7 @@
         }
     }
 
-    // .sial__content
+   
 
     &__content {
         transition: all 0.3s ;  
@@ -135,7 +135,7 @@
         padding: rem(77) rem(216) rem(380) rem(39);
     }
 
-    // .sial__descr
+   
 
     &__descr {
                 
@@ -148,7 +148,7 @@ color: #FFFFFF;
 padding-top: rem(25);
     }
 
-    // .sial__card-medium
+ 
 
     &__card-medium {
         width: rem(520);
@@ -156,10 +156,162 @@ padding-top: rem(25);
         overflow: hidden;
         position: relative;
         transition: all 0.3s ; 
-        &:hover .sial__content{
+        &:hover .galery__content{
             position: absolute;
             top: rem(0);
             transition: all 0.3s ;  
         }
     }
 }
+.galery {
+
+    // .galery__inner
+
+    &__inner {
+        width: 100%;
+        height: rem(556);
+        position: relative;
+    }
+
+    // .galery__text
+
+    &__text {
+        z-index: 5;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include adaptiveValue("padding-top",235 ,70 );
+
+
+    }
+
+    // .galery__subtitle
+
+    &__subtitle {
+        font-family:Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size:rem(22);
+        line-height: rem(27);
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        text-align: center;
+        @include adaptiveValue("padding-top",30 ,15 );
+        
+    }
+
+    // .galery__parag
+
+    &__parag {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(14);
+        line-height: rem(21);
+        text-align: center;
+        color: #FFFFFF;
+        @include adaptiveValue("padding-top",18 ,10 );
+       
+    }
+
+    // .galery__slider
+
+    &__slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    // .galery__wrapper
+
+    &__wrapper {
+    }
+
+    // .galery__slide
+
+    &__slide {
+    }
+
+    // .galery__image
+
+    &__image {
+    }
+    &__icon{
+       
+       
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.galery {
+display: flex;
+flex-direction: column;
+gap: rem(30);
+    // .galery__bottom
+
+    &__bottom {
+    }
+
+    // .galery__cards
+
+    &__cards {
+        display: flex;
+        justify-content:space-between ;
+    }
+
+    // .galery__card-small
+
+    &__card-small {
+        position: relative;
+        width: rem(409);
+        height: rem(404);
+        overflow: hidden;
+        &:hover .galery__contents{
+            position: absolute;
+            top: rem(0);
+            transition: all 0.3s ;  
+        }
+    }
+
+    // .galery__contents
+
+    &__contents {
+        transition: all 0.3s ;  
+        background: rgba(51, 125, 90, 0.97);
+        opacity: 0.9;
+        padding: rem(60) rem(40) rem(240) rem(40);
+    }
+
+    // .galery__title
+
+    &__titles {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: rem(18);
+        line-height: rem(20);
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+
+
+    }
+
+    // .galery__descr
+
+    &__descrs {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: rem(13);
+        line-height: rem(18);
+        color: #FFFFFF;
+        padding-top: rem(25)
+    }
+}
+
