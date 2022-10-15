@@ -75,7 +75,12 @@
 .galery {
 
     // .sial__container
-
+    &__img{
+        @media (max-width:$mobile){
+           
+        }
+    }
+ 
     &__container {
     }
 
@@ -108,6 +113,9 @@
     &__top {
         display: flex;
         gap: rem(31);
+        @media (max-width:$mobile){
+             flex-direction: column; 
+        }
     }
 
    
@@ -124,6 +132,7 @@
             transition: all 0.9s ;
             
         }
+   
     }
 
    
@@ -133,6 +142,11 @@
         background: rgba(51, 125, 90, 0.97);
         opacity: 0.9;
         padding: rem(77) rem(216) rem(380) rem(39);
+        @media (max-width:$mobile){
+            width: rem(350);
+            height: rem(200);
+            
+        }
     }
 
    
@@ -161,6 +175,11 @@ padding-top: rem(25);
             top: rem(0);
             transition: all 0.3s ;  
         }
+    }
+    @media (max-width:$mobile){
+        width: rem(350);
+        height: rem(200);
+        
     }
 }
 .galery {
@@ -256,6 +275,7 @@ gap: rem(30);
     // .galery__bottom
 
     &__bottom {
+     
     }
 
     // .galery__cards

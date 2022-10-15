@@ -353,9 +353,9 @@
     }
 }
 .swiper {
-    @media (max-width:$mobile){
-         width: rem(345); 
-    }
+    // @media (max-width:$mobile){
+    //      width: rem(345); 
+    // }
 }
 .swiper-wrapper {
 }

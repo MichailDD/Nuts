@@ -3,26 +3,54 @@
     // .page__galary
 
     &__galary {
+        position: relative;
+        width: 100%;
+        height: rem(600);
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345); 
+        }
     }
 }
 .cadr {
+    margin-top: rem(18);
     position: relative;
+    @media (max-width:$mobile){
+        height: rem(180);
+        min-width: rem(345); 
+    }
     // .cadr__container
 
     &__container {
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 5;
+        justify-content:center;
+        align-items: center;
+        @include adaptiveValue("padding-top",235 ,50 );
+        gap: rem(10);
 
     }
 
     // .cadr__title
 
     &__title {
+        font-weight: 800;
+        @include adaptiveValue("font-size",62 ,30 );
+        @include adaptiveValue("line-height",73 ,25 );
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
     }
 
     // .cadr__subtitle
 
     &__subtitle {
+        font-weight: 500;
+        @include adaptiveValue("font-size",25 ,10 );
+        @include adaptiveValue("line-height", 29,15 );
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
     }
 
     // .cadr__slider
@@ -32,6 +60,7 @@
         top: 0;
         left: 0;
         width: 100%;
+        
         
     }
 
@@ -49,11 +78,21 @@
     // .cadr__blok
 
     &__blok {
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            
+         }
     }
 
     // .cadr__img
 
     &__img {
+     @media (max-width:$mobile){
+        height: rem(180);
+        min-width: rem(345);
+        
+     }
     }
 }
 .swiper {
@@ -61,4 +100,7 @@
 .swiper-wrapper {
 }
 .swiper-slide {
+}
+.bloks{
+    @include adaptiveValue("padding-top",93 ,20 );
 }

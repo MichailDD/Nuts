@@ -79,10 +79,26 @@
 .top {
 }
 .register {
+	&__vh{
+		display: flex;
+		gap: rem(6);
+		
+		
+	}
+	&__icon{
+		// width: rem(11);
+		// height: rem(11);
+		padding-top: rem(2);
 
+	}
 	// .register__input
 
 	&__input {
+		font-weight: 500;
+		font-size: rem(13);
+		line-height: rem(15);
+		letter-spacing: 0.02em;
+		color: #323232;
 	}
 }
 .lang {
@@ -90,6 +106,10 @@
 	// .lang__header
 
 	&__header {
+		font-weight: 500;
+		font-size: rem(13);
+		line-height: rem(15);
+		letter-spacing: 0.02em;
 	}
 }
 .inner {

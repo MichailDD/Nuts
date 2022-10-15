@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<section class="page__product product">
+                    <div class="product__container">
+                        <div class="product__title">Каталог продукции</div>
+                    </div>
+                    <div class="product__slider swiper">
+                        <div class="product__wrapper swiper-wrapper">
+                            <div class="product__slide swiper-slide">
+                                <div class="product__blok">
+                                    <img class="product__img" src="@img/katalog/slide01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product__slide swiper-slide">
+                                <div class="product__blok">
+                                    <img class="product__img" src="@img/katalog/slide02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="page__filter filter">
+                    <div class="filter__container">
+                        <div class="filter__left">
+                            <div class="filter__blok">
+                                <div class="filter__descr">Фильтр</div>
+                                <img src="@img/katalog/icon01.svg" alt="">
+                            </div>
+                            <div class="filter__border">
+                                <div class="filter__text">Вкус</div>
+                                <img src="@img/katalog/icon02.svg" alt="">
+                            </div>
+                            <div class="filter__border-small">
+                                <div class="filter__text">Масса </div>
+                                <img src="@img/katalog/icon02.svg" alt="">
+                            </div>
+                            <div class="filter__blok">
+                                <div class="filter__descr">Стоимость</div>
+                                <img src="@img/katalog/icon03.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="filter__right">
+                            <button type="button" class="button filter__button">Применить</button>
+                            <button type="button" class="button-bg">
+                                <img src="@img/katalog/icon04.svg" alt="">
+                                <div class="filter__subtitle">Сбросить</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <section class="katalog">
+                    <div class="katalog__container">
+                        <div class="katalog__cards">
+                            <div class="katalog__card">
+                                <div class="katalog__image">
+                                  <div class="katalog__slider swiper">
+                                    <div class="katalog__wrapper swiper-wrapper">
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic01.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic01.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic01.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <img class="katalog__img" src="@img/katalog/icon07.svg" alt="">
+                                </div>
+                                <div class="katalog__title">Грецкий орех</div>
+                                <div class="katalog__subtitle">Арт: 0091</div>
+                                <div class="katalog__descr">Орех сладкий, классический, <br>
+                                    очищенный</div>
+                                <div class="katalog__info">
+                                    <div class="katalog__massa">
+                                        <img src="@img/katalog/icon05.svg" alt="">
+                                        <div class="katalog__gramm gramm">
+                                            <div class="gramm__descr">Масса:</div>
+                                            <div class="gramm__text">40г.</div>
+                                        </div>
+                                    </div>
+                                    <div class="vakuum">
+                                        <img src="@img/katalog/icon06.svg" alt="">
+                                        <div class="vakkum__blok">
+                                            <div class="gramm__descr">Упаковка</div>
+                                            <div class="gramm__text">Вакуумная</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="katalog__line">
+                                <div class="katalog__bottom">
+                                    <div class="katalog__left">
+                                        <div class="katalog__cen">Цена:</div>
+                                        <div class="katalog__summ">19 грн</div>
+                                        <div class="katalog__summ-bg">21 грн</div>
+                                    </div>
+                                    <div class="katalog__right">
+                                        <button type="button" class="button ">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="katalog__card">
+                                <div class="katalog__image">
+                                  <div class="katalog__slider swiper">
+                                    <div class="katalog__wrapper swiper-wrapper">
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic03.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic03.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <img class="katalog__img" src="@img/katalog/icon08.svg" alt="">
+                                </div>
+                                <div class="katalog__title">Грецкий орех</div>
+                                <div class="katalog__subtitle">Арт: 0091</div>
+                                <div class="katalog__descr">Орех сладкий, классический, <br>
+                                    очищенный</div>
+                                <div class="katalog__info">
+                                    <div class="katalog__massa">
+                                        <img src="@img/katalog/icon05.svg" alt="">
+                                        <div class="katalog__gramm gramm">
+                                            <div class="gramm__descr">Масса:</div>
+                                            <div class="gramm__text">40г.</div>
+                                        </div>
+                                    </div>
+                                    <div class="vakuum">
+                                        <img src="@img/katalog/icon06.svg" alt="">
+                                        <div class="vakkum__blok">
+                                            <div class="gramm__descr">Упаковка</div>
+                                            <div class="gramm__text">Вакуумная</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="katalog__line">
+                               <div class="katalog__bottom">
+                                <div class="katalog__left">
+                                    <div class="katalog__cen">Цена:</div>
+                                    <div class="katalog__summ">от 21 грн.</div>
+                                    
+                                </div>
+                                <div class="katalog__right">
+                                    <button type="button" class="button ">Купить</button>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="katalog__card">
+                                <div class="katalog__image">
+                                  <div class="katalog__slider swiper">
+                                    <div class="katalog__wrapper swiper-wrapper">
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic04.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic04.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_blok">
+                                                <img src="@img/katalog/pic04.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="katalog__title">Грецкий орех</div>
+                                <div class="katalog__subtitle">Арт: 0091</div>
+                                <div class="katalog__descr">Орех сладкий, классический,<br>
+                                    очищенный</div>
+                                <div class="katalog__info">
+                                    <div class="katalog__massa">
+                                        <img src="@img/katalog/icon05.svg" alt="">
+                                        <div class="katalog__gramm gramm">
+                                            <div class="gramm__descr">Масса:</div>
+                                            <div class="gramm__text">40г.</div>
+                                        </div>
+                                    </div>
+                                    <div class="vakuum">
+                                        <img src="@img/katalog/icon06.svg" alt="">
+                                        <div class="vakkum__blok">
+                                            <div class="gramm__descr">Упаковка</div>
+                                            <div class="gramm__text">Вакуумная</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="katalog__line">
+                                <div class="katalog__bottom">
+                                    <div class="katalog__left">
+                                        <div class="katalog__cen">Цена:</div>
+                                        <div class="katalog__summ">от 21 грн.</div>
+                                        
+                                    </div>
+                                    <div class="katalog__right">
+                                        <button type="button" class="button ">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="katalog__card">
+                                <div class="katalog__image">
+                                  <div class="katalog__slider swiper">
+                                    <div class="katalog__wrapper swiper-wrapper">
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic02.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="katalog__title">Грецкий орех</div>
+                                <div class="katalog__subtitle">Арт: 0091</div>
+                                <div class="katalog__descr">Орех сладкий, классический,<br>
+                                    очищенный</div>
+                                <div class="katalog__info">
+                                    <div class="katalog__massa">
+                                        <img src="@img/katalog/icon05.svg" alt="">
+                                        <div class="katalog__gramm gramm">
+                                            <div class="gramm__descr">Масса:</div>
+                                            <div class="gramm__text">40г.</div>
+                                        </div>
+                                    </div>
+                                    <div class="vakuum">
+                                        <img src="@img/katalog/icon06.svg" alt="">
+                                        <div class="vakkum__blok">
+                                            <div class="gramm__descr">Упаковка</div>
+                                            <div class="gramm__text">Вакуумная</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="katalog__line">
+                               <div class="katalog__bottom">
+                                <div class="katalog__left">
+                                    <div class="katalog__cen">Цена:</div>
+                                    <div class="katalog__summ">19 грн</div>
+                                    <div class="katalog__summ-bg">21 грн</div>
+                                </div>
+                                <div class="katalog__right">
+                                    <button type="button" class="button ">Купить</button>
+                                </div>
+                               </div>
+                            </div>
+                            <div class="katalog__card">
+                                <div class="katalog__image">
+                                  <div class="katalog__slider swiper">
+                                    <div class="katalog__wrapper swiper-wrapper">
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic05.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic05.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic05.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="katalog__title">Грецкий орех</div>
+                                <div class="katalog__subtitle">Арт: 0091</div>
+                                <div class="katalog__descr">Орех сладкий, классический,<br>
+                                    очищенный</div>
+                                <div class="katalog__info">
+                                    <div class="katalog__massa">
+                                        <img src="@img/katalog/icon05.svg" alt="">
+                                        <div class="katalog__gramm gramm">
+                                            <div class="gramm__descr">Масса:</div>
+                                            <div class="gramm__text">40г.</div>
+                                        </div>
+                                    </div>
+                                    <div class="vakuum">
+                                        <img src="@img/katalog/icon06.svg" alt="">
+                                        <div class="vakkum__blok">
+                                            <div class="gramm__descr">Упаковка</div>
+                                            <div class="gramm__text">Вакуумная</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="katalog__line">
+                              <div class="katalog__bottom">
+                                <div class="katalog__left">
+                                    <div class="katalog__cen">Цена:</div>
+                                    <div class="katalog__summ">от 21 грн.</div>
+                                    
+                                </div>
+                                <div class="katalog__right">
+                                    <button type="button" class="button ">Купить</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="katalog__card">
+                                <div class="katalog__image">
+                                  <div class="katalog__slider swiper">
+                                    <div class="katalog__wrapper swiper-wrapper">
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic06.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic06.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="katalog__slide swiper-slide">
+                                            <div class="katalog_bloks">
+                                                <img src="@img/katalog/pic06.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="katalog__title">Грецкий орех</div>
+                                <div class="katalog__subtitle">Арт: 0091</div>
+                                <div class="katalog__descr">Орех сладкий, классический,<br>
+                                    очищенный</div>
+                                <div class="katalog__info">
+                                    <div class="katalog__massa">
+                                        <img src="@img/katalog/icon05.svg" alt="">
+                                        <div class="katalog__gramm gramm">
+                                            <div class="gramm__descr">Масса:</div>
+                                            <div class="gramm__text">40г.</div>
+                                        </div>
+                                    </div>
+                                    <div class="vakuum">
+                                        <img src="@img/katalog/icon06.svg" alt="">
+                                        <div class="vakkum__blok">
+                                            <div class="gramm__descr">Упаковка</div>
+                                            <div class="gramm__text">Вакуумная</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="katalog__line">
+                                <div class="katalog__bottom">
+                                    <div class="katalog__left">
+                                        <div class="katalog__cen">Цена:</div>
+                                        <div class="katalog__summ">от 21 грн.</div>
+                                        
+                                    </div>
+                                    <div class="katalog__right">
+                                        <button type="button" class="button ">Купить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-spollers class="spollers">
+                            <div class="katalog__item">
+                                <button type="button" data-spoller class="spollers__title">Загрузить еще</button>
+                                <div class="spollers__body">
+                                    <div class="katalog__cards">
+                                        <div class="katalog__card">
+                                            <div class="katalog__image">
+                                              <div class="katalog__slider swiper">
+                                                <div class="katalog__wrapper swiper-wrapper">
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic01.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic01.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic01.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <img class="katalog__img" src="@img/katalog/icon07.svg" alt="">
+                                            </div>
+                                            <div class="katalog__title">Грецкий орех</div>
+                                            <div class="katalog__subtitle">Арт: 0091</div>
+                                            <div class="katalog__descr">Орех сладкий, классический, <br>
+                                                очищенный</div>
+                                            <div class="katalog__info">
+                                                <div class="katalog__massa">
+                                                    <img src="@img/katalog/icon05.svg" alt="">
+                                                    <div class="katalog__gramm gramm">
+                                                        <div class="gramm__descr">Масса:</div>
+                                                        <div class="gramm__text">40г.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="vakuum">
+                                                    <img src="@img/katalog/icon06.svg" alt="">
+                                                    <div class="vakkum__blok">
+                                                        <div class="gramm__descr">Упаковка</div>
+                                                        <div class="gramm__text">Вакуумная</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="katalog__line">
+                                            <div class="katalog__bottom">
+                                                <div class="katalog__left">
+                                                    <div class="katalog__cen">Цена:</div>
+                                                    <div class="katalog__summ">19 грн</div>
+                                                    <div class="katalog__summ-bg">21 грн</div>
+                                                </div>
+                                                <div class="katalog__right">
+                                                    <button type="button" class="button ">Купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="katalog__card">
+                                            <div class="katalog__image">
+                                              <div class="katalog__slider swiper">
+                                                <div class="katalog__wrapper swiper-wrapper">
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic03.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic03.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic03.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <img class="katalog__img" src="@img/katalog/icon08.svg" alt="">
+                                            </div>
+                                            <div class="katalog__title">Грецкий орех</div>
+                                            <div class="katalog__subtitle">Арт: 0091</div>
+                                            <div class="katalog__descr">Орех сладкий, классический, <br>
+                                                очищенный</div>
+                                            <div class="katalog__info">
+                                                <div class="katalog__massa">
+                                                    <img src="@img/katalog/icon05.svg" alt="">
+                                                    <div class="katalog__gramm gramm">
+                                                        <div class="gramm__descr">Масса:</div>
+                                                        <div class="gramm__text">40г.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="vakuum">
+                                                    <img src="@img/katalog/icon06.svg" alt="">
+                                                    <div class="vakkum__blok">
+                                                        <div class="gramm__descr">Упаковка</div>
+                                                        <div class="gramm__text">Вакуумная</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="katalog__line">
+                                           <div class="katalog__bottom">
+                                            <div class="katalog__left">
+                                                <div class="katalog__cen">Цена:</div>
+                                                <div class="katalog__summ">от 21 грн.</div>
+                                                
+                                            </div>
+                                            <div class="katalog__right">
+                                                <button type="button" class="button ">Купить</button>
+                                            </div>
+                                           </div>
+                                        </div>
+                                        <div class="katalog__card">
+                                            <div class="katalog__image">
+                                              <div class="katalog__slider swiper">
+                                                <div class="katalog__wrapper swiper-wrapper">
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic04.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic04.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_blok">
+                                                            <img src="@img/katalog/pic04.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="katalog__title">Грецкий орех</div>
+                                            <div class="katalog__subtitle">Арт: 0091</div>
+                                            <div class="katalog__descr">Орех сладкий, классический,<br>
+                                                очищенный</div>
+                                            <div class="katalog__info">
+                                                <div class="katalog__massa">
+                                                    <img src="@img/katalog/icon05.svg" alt="">
+                                                    <div class="katalog__gramm gramm">
+                                                        <div class="gramm__descr">Масса:</div>
+                                                        <div class="gramm__text">40г.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="vakuum">
+                                                    <img src="@img/katalog/icon06.svg" alt="">
+                                                    <div class="vakkum__blok">
+                                                        <div class="gramm__descr">Упаковка</div>
+                                                        <div class="gramm__text">Вакуумная</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="katalog__line">
+                                            <div class="katalog__bottom">
+                                                <div class="katalog__left">
+                                                    <div class="katalog__cen">Цена:</div>
+                                                    <div class="katalog__summ">от 21 грн.</div>
+                                                    
+                                                </div>
+                                                <div class="katalog__right">
+                                                    <button type="button" class="button ">Купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="katalog__card">
+                                            <div class="katalog__image">
+                                              <div class="katalog__slider swiper">
+                                                <div class="katalog__wrapper swiper-wrapper">
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic02.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic02.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic02.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="katalog__title">Грецкий орех</div>
+                                            <div class="katalog__subtitle">Арт: 0091</div>
+                                            <div class="katalog__descr">Орех сладкий, классический,<br>
+                                                очищенный</div>
+                                            <div class="katalog__info">
+                                                <div class="katalog__massa">
+                                                    <img src="@img/katalog/icon05.svg" alt="">
+                                                    <div class="katalog__gramm gramm">
+                                                        <div class="gramm__descr">Масса:</div>
+                                                        <div class="gramm__text">40г.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="vakuum">
+                                                    <img src="@img/katalog/icon06.svg" alt="">
+                                                    <div class="vakkum__blok">
+                                                        <div class="gramm__descr">Упаковка</div>
+                                                        <div class="gramm__text">Вакуумная</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="katalog__line">
+                                           <div class="katalog__bottom">
+                                            <div class="katalog__left">
+                                                <div class="katalog__cen">Цена:</div>
+                                                <div class="katalog__summ">19 грн</div>
+                                                <div class="katalog__summ-bg">21 грн</div>
+                                            </div>
+                                            <div class="katalog__right">
+                                                <button type="button" class="button ">Купить</button>
+                                            </div>
+                                           </div>
+                                        </div>
+                                        <div class="katalog__card">
+                                            <div class="katalog__image">
+                                              <div class="katalog__slider swiper">
+                                                <div class="katalog__wrapper swiper-wrapper">
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic05.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic05.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic05.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="katalog__title">Грецкий орех</div>
+                                            <div class="katalog__subtitle">Арт: 0091</div>
+                                            <div class="katalog__descr">Орех сладкий, классический,<br>
+                                                очищенный</div>
+                                            <div class="katalog__info">
+                                                <div class="katalog__massa">
+                                                    <img src="@img/katalog/icon05.svg" alt="">
+                                                    <div class="katalog__gramm gramm">
+                                                        <div class="gramm__descr">Масса:</div>
+                                                        <div class="gramm__text">40г.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="vakuum">
+                                                    <img src="@img/katalog/icon06.svg" alt="">
+                                                    <div class="vakkum__blok">
+                                                        <div class="gramm__descr">Упаковка</div>
+                                                        <div class="gramm__text">Вакуумная</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="katalog__line">
+                                          <div class="katalog__bottom">
+                                            <div class="katalog__left">
+                                                <div class="katalog__cen">Цена:</div>
+                                                <div class="katalog__summ">от 21 грн.</div>
+                                                
+                                            </div>
+                                            <div class="katalog__right">
+                                                <button type="button" class="button ">Купить</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="katalog__card">
+                                            <div class="katalog__image">
+                                              <div class="katalog__slider swiper">
+                                                <div class="katalog__wrapper swiper-wrapper">
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic06.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic06.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="katalog__slide swiper-slide">
+                                                        <div class="katalog_bloks">
+                                                            <img src="@img/katalog/pic06.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="katalog__title">Грецкий орех</div>
+                                            <div class="katalog__subtitle">Арт: 0091</div>
+                                            <div class="katalog__descr">Орех сладкий, классический,<br>
+                                                очищенный</div>
+                                            <div class="katalog__info">
+                                                <div class="katalog__massa">
+                                                    <img src="@img/katalog/icon05.svg" alt="">
+                                                    <div class="katalog__gramm gramm">
+                                                        <div class="gramm__descr">Масса:</div>
+                                                        <div class="gramm__text">40г.</div>
+                                                    </div>
+                                                </div>
+                                                <div class="vakuum">
+                                                    <img src="@img/katalog/icon06.svg" alt="">
+                                                    <div class="vakkum__blok">
+                                                        <div class="gramm__descr">Упаковка</div>
+                                                        <div class="gramm__text">Вакуумная</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="katalog__line">
+                                            <div class="katalog__bottom">
+                                                <div class="katalog__left">
+                                                    <div class="katalog__cen">Цена:</div>
+                                                    <div class="katalog__summ">от 21 грн.</div>
+                                                    
+                                                </div>
+                                                <div class="katalog__right">
+                                                    <button type="button" class="button ">Купить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="clear">
+                    <div class="clear__container">
+                        <div class="clear__left">
+                            <div class="clear__title">Экологически чистый
+                                грецкий орех</div>
+                            <div class="clear__subtitle">Оптом, и в розницу</div>
+                            <p class="clear__descr">Сельскохозяйственный обслуживающий кооператив 
+                                “Орех Причерноморья” выращивает смешанные сады 
+                                ореха грецкого с фундуком, а также ореха грецкого 
+                                с шиповником, на площади более 150 гектаров. </p>
+                            <p class="clear__descr">Помимо этого кооператив занимается выращиванием 
+                                посадочного материала, саженцов привитого и непривитого 
+                                грецкого ореха, фундука и шиповника.</p>
+                            <p class="clear__descr">Орех Причерноморья – это первый и единственный в Украине 
+                                сад по совместному выращиванию фундука и грецкого ореха</p>
+                        </div>
+                        <div class="clear__right">
+                            <div class="clear__image">
+                                <!-- Оболочка слайдера -->
+                                <div class="clear__slider swiper">
+                                    <!-- Двигающееся часть слайдера -->
+                                    <div class="clear__wrapper swiper-wrapper">
+                                        <!-- Слайд -->
+                                        <div class="clear__slide swiper-slide">
+                                            <div class="clear__blok">
+                                                <img src="@img/katalog/pic07.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="clear__slide swiper-slide">
+                                            <div class="clear__blok">
+                                                <img src="@img/katalog/pic07.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="clear__slide swiper-slide">
+                                            <div class="clear__blok">
+                                                <img src="@img/katalog/pic07.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Если нужна пагинация -->
+                                    <!-- <div class="swiper-pagination"></div> -->
+                                    <!-- Если нужна навигация (влево/вправо) -->
+                                   <div class="clear__actions">
+                                    <button type="button" class="swiper-button-prev">
+                                        <img src="@img/katalog/icon09.svg" alt="">
+                                    </button>
+                                    <button type="button" class="swiper-button-next">
+                                        <img src="@img/katalog/icon10.svg" alt="">
+                                    </button>
+                                   </div>
+                                    <!-- Если нужен скролбар -->
+                                    <!-- <div class="swiper-scrollbar"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</main>
+			<!-- @@include('html/_footer.htm',{}) -->
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

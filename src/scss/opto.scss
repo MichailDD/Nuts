@@ -1,44 +1,47 @@
 .nut {
-position: relative;
-    // .nut__blok
-
-    &__blok {
-        z-index: 3;
-        position: relative;
-
-    }
-    &__item{
-
-    }
-
+    position: relative;
+    width: 100%;
+    height: rem(600);
+    @include adaptiveValue("margin-top",16 ,10 );
     // .nut__container
+    @media (max-width:$mobile){
+        height: rem(180);
+        min-width: rem(345); 
+    }
 
     &__container {
-        @include adaptiveValue("padding-top",237 ,150 );
-        text-align: center;
-        font-weight: 800;
-     
+        position: relative;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+        justify-content:center;
+        align-items: center;
+        @include adaptiveValue("padding-top",237 ,50 );
     }
 
     // .nut__title
 
     &__title {
-        z-index: 3;
-        @include adaptiveValue("font-size", 62, 30);
-        @include adaptiveValue(" line-height",73 ,35 );
+        font-weight: 800;
+        @include adaptiveValue("font-size", 62,20 );
+        @include adaptiveValue("line-height",73 ,20 );
         letter-spacing: 0.01em;
         color: #FFFFFF;
     }
 
-    // .nut__descr
+    // .nut__subtitle
 
-    &__descr {
-        font-weight: 600;
-        @include adaptiveValue("font-size",25 ,12 );
+    &__subtitle {
+        font-size: rem(25);
         line-height: rem(29);
         text-align: center;
         letter-spacing: 0.01em;
         color: #FFFFFF;
+        @media (max-width:$mobile){
+            font-size: rem(15);
+            line-height: rem(19);
+        }
     }
 
     // .nut__slider
@@ -46,19 +49,34 @@ position: relative;
     &__slider {
         position: absolute;
         top: 0;
-        left:0;
+        left: 0;
         width: 100%;
     }
-
+    &__img{
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            
+         }
+    }
     // .nut__wrapper
 
     &__wrapper {
-        
     }
 
     // .nut__slide
 
     &__slide {
+    }
+
+    // .nut__blok
+
+    &__blok {
+        @media (max-width:$mobile){
+            height: rem(180);
+            min-width: rem(345);
+            
+         }
     }
 }
 .swiper {
@@ -67,24 +85,11 @@ position: relative;
 }
 .swiper-slide {
 }
-.slide {
 
-    // .slide__blok
-
-    &__blok {
-    }
-}
-.page {
-
-		// .page__client
-
-		&__client {
-		}
-}
 .client {
-padding-top: rem(340);
+ padding-top: rem(79);
 @media (max-width:$mobile){
-     padding-top: rem(300); 
+     padding-top: rem(50); 
 }
 		// .client__container
 
