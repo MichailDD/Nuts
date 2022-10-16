@@ -29,7 +29,13 @@
         color: $color4;
 
     }
-
+    &__item{
+        font-weight: 700;
+        font-size: rem(14);
+        line-height: rem(20);
+        color: $color4;
+        letter-spacing: 0.01em;
+    }
     // .centr__data
 
     &__data {

@@ -41,7 +41,7 @@
         font-weight: 600;
         font-size: rem(25);
         line-height: rem(29);
-        
+        text-align: center;
         letter-spacing: 0.01em;
         color: #FFFFFF;
     }
@@ -244,7 +244,7 @@ background-color: #FBFBFB;
         font-size: rem(16);
         line-height: rem(21);
         letter-spacing: 0.01em;
-        padding-top: rem(10);
+        padding-top: rem(10);   
     }
 
     // .autor__descr
@@ -502,7 +502,7 @@ background-color: #FBFBFB;
 .aboute {
 
     // .aboute__news
-
+@include adaptiveValue("margin-top", 18,5 );
     &__news {
     }
 }
